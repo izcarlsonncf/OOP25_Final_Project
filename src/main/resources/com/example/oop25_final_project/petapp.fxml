@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="141.0" prefWidth="165.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop25_final_project.PetAppController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@gleebus.png" />
+      </image></ImageView>
+   <Label fx:id="petStatusLabel" text="Label" textAlignment="CENTER" textFill="#8fc942">
+      <font>
+         <Font name="Comic Sans MS" size="18.0" />
+      </font></Label>
+   <Label fx:id="instructionLabel" textAlignment="CENTER" />
+   <Button mnemonicParsing="false" onAction="#onInstruct" text="HELP">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Button>
+   <Button mnemonicParsing="false" onAction="#onTick" text="Tick" />
+
+    <Button onAction="#onPlay" text="Play" />
+   <Button mnemonicParsing="false" onAction="#onFeed" text="Feed" />
+</VBox>
